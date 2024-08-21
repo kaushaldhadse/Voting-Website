@@ -14,7 +14,7 @@ const pollSchema = new mongoose.Schema({
         ref: 'User'
     },
     question: String,
-    option: [optionSchema],
+    options: [optionSchema],
     voted: [{type: mongoose.Schema.Types.ObjectId, ref: 'User'}],
     created: {
         type: Date,
